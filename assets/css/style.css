@@ -1,0 +1,13 @@
+.jumbotron {
+    background-image: url(../images/jumbotron-bkg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: #f7c331;
+    height: 550px;
+}
+
+#fblogo{
+
+    margin-top: 275px;
+}
