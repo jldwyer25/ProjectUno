@@ -16,6 +16,7 @@
     border-radius:50%;
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
 
 
 }   
@@ -64,3 +65,5 @@ h6{
 .form-control{
     text-align: center;
 }
+
+
