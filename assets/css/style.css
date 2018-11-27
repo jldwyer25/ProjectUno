@@ -66,4 +66,15 @@ h6{
     text-align: center;
 }
 
+#pet-name{
+    color: #17a2b8;
+}
+
+.favorite-cat{
+    border-radius:50%;
+    max-width: 20%;
+    height: auto;
+    margin-top: 20px;
+}
+
 
