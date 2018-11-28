@@ -16,10 +16,17 @@
     border-radius:50%;
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
-
-
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }   
+
+.img-fluid-pet{
+    border-radius:50%;
+    max-width: 150px;
+    height: 150px ;
+} 
 
 .dropdown{
     display: block;
@@ -36,8 +43,9 @@
 
 .btn{
     margin-top: 20px;
-
+    background-color: #f7f7f7;
 }
+
 #headings{
     margin-top: 40px;
 }
@@ -68,13 +76,27 @@ h6{
 
 #pet-name{
     color: #17a2b8;
+    margin-top: 22%;
+}
+
+#breed-type{
+    margin-top: 25%;
+}
+
+#pet-distance{
+    margin-top: 25%;
 }
 
 .favorite-cat{
     border-radius:50%;
-    max-width: 20%;
-    height: auto;
+    max-width: 150px;
+    height: 150px;
     margin-top: 20px;
 }
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
 
 
