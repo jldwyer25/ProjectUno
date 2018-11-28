@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome to Fetchbook!</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Fetchbook!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 </head>
 
@@ -33,11 +34,18 @@
 
   <!-- Jumbotron -->
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4 text-center">FetchBook</h1>
+  <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 center-block">
+                    <div id="fblogo"> <img src="../assets/images/fetchbook-logo-01.svg" alt="FetchBook"></div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
     </div>
-  </div>
+
   <!-- Container -->
 
   <div class="container">
@@ -53,12 +61,75 @@
           Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
 
         <!-- Image for Cat  -->
-        <!-- Dropdown for cat -->
-        <!-- Image for Dog -->
-        <!-- Dropdown for dog -->
+        <div class="col-md-2"></div>
+        <div class="col-md-4 center-block">
+            <img src="../assets/images/fb-cat-350x350.jpg" class="img-fluid" alt="find a cat">
+                   <!-- Dropdown for cat -->
+            <div class="dropdown">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    cat breeds
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">DSH</a>
+                    <a class="dropdown-item" href="#">Domestic long-haired</a>
+                    <a class="dropdown-item" href="#">Bengal Cat</a>
+                    <a class="dropdown-item" href="#">Hemingway Polydactyl</a>
+                    <a class="dropdown-item" href="#">Calico cat</a>
+                    <a class="dropdown-item" href="#">Maine Coon</a>
+                    <a class="dropdown-item" href="#">Russian Blue</a>
+                    <a class="dropdown-item" href="#">Siamese cat</a>
+                    <a class="dropdown-item" href="#">Tabby</a>
+                    <a class="dropdown-item" href="#">Tortoiseshell cat</a>
 
-        <!-- Zip code search bar -->
-        <!-- Search button -->
+                </div>
+
+            </div>
+        </div>
+ 
+        <!-- Image for Dog -->
+        <div class="col-md-4 center-block">
+                <img src="../assets/images/fb-dog-350x350.jpg" class="img-fluid" alt="find a dog">
+                    <!-- Dropdown for dog -->
+                <div class="dropdown">
+                    <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        dog breeds
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Pit Bull</a>
+                        <a class="dropdown-item" href="#">Retriever</a>
+                        <a class="dropdown-item" href="#">Jack Rusell</a>
+                        <a class="dropdown-item" href="#">Boxer</a>
+                        <a class="dropdown-item" href="#">German Shepherd</a>
+                        <a class="dropdown-item" href="#">Beagle</a>
+                        <a class="dropdown-item" href="#">Shiba Inu</a>
+                        <a class="dropdown-item" href="#">Corgi</a>
+                        <a class="dropdown-item" href="#">Chihuahua</a>
+
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-2"></div>
+
+
+            <div class="col-md-5"></div>
+
+            <div class="col-md-2">
+                <form>
+                     <!-- Zip code search bar -->
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" type="text" placeholder="zip code">
+                                <!-- Search button -->
+                        <button type="button" class="btn btn-info">SEARCH</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5"></div>
+
+       
+
 
         <p>Why adopt?</p>
 
