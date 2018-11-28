@@ -8,7 +8,7 @@
     <title>Welcome to Fetchbook!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
@@ -16,7 +16,7 @@
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
-        <a href="index.html"> <img src="../assets/images/fetchbook-icon-white.svg" width="83" height="45" alt="FetchBook"></a>
+        <a href="index.html"> <img src="assets/images/fetchbook-icon-white.svg" width="83" height="45" alt="FetchBook"></a>
         <div class="collapse navbar-collapse" id="navbarNav">
         </div>
     </nav>
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6 center-block">
-                    <div id="fblogo"> <img src="../assets/images/fetchbook-logo-01.svg" alt="FetchBook"></div>
+                    <div id="fblogo"> <img src="assets/images/fetchbook-logo-01.svg" alt="FetchBook"></div>
                 </div>
                 <div class="col-md-3"></div>
             </div>
@@ -49,48 +49,32 @@
 
             <div class="col-2"></div>
             <div class="col-4">
-                <img src="../assets/images/fb-cat-350x350.jpg" class="img-fluid" alt="find a cat">
-                <div class="dropdown">
-                    <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        cat breeds
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">DSH</a>
-                        <a class="dropdown-item" href="#">Domestic long-haired</a>
-                        <a class="dropdown-item" href="#">Bengal Cat</a>
-                        <a class="dropdown-item" href="#">Hemingway Polydactyl</a>
-                        <a class="dropdown-item" href="#">Calico cat</a>
-                        <a class="dropdown-item" href="#">Maine Coon</a>
-                        <a class="dropdown-item" href="#">Russian Blue</a>
-                        <a class="dropdown-item" href="#">Siamese cat</a>
-                        <a class="dropdown-item" href="#">Tabby</a>
-                        <a class="dropdown-item" href="#">Tortoiseshell cat</a>
-
-                    </div>
-
-                </div>
+                <img src="assets/images/fb-cat-350x350.jpg" class="img-fluid" alt="find a cat">
+                <select  class="form-control" id="catdropdown">
+                        <option class="dropdown-item" value="domestic_short_hair">DSH</option>
+                        <option class="dropdown-item" value="DLH">Domestic Long Hair</option>
+                        <option class="dropdown-item" value="bengal_cat">Bengal Cat</option>
+                        <option class="dropdown-item" value="hemingway_polydactyl">Hemingway Polydactyl</option>
+                        <option class="dropdown-item" value="calico_cat">Calico</option>
+                        <option class="dropdown-item" value="maine_coon">Maine Coon</option>
+                        <option class="dropdown-item" value="russian_blue">Russian Blue</option>
+                        <option class="dropdown-item" value="siamese_cat">Siamese</option>
+                        <option class="dropdown-item" value="tabby">Tabby</option>
+                      </select>
             </div>
             <div class="col-4">
-                <img src="../assets/images/fb-dog-350x350.jpg" class="img-fluid" alt="find a dog">
-                <div class="dropdown">
-                    <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        dog breeds
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Pit Bull</a>
-                        <a class="dropdown-item" href="#">Retriever</a>
-                        <a class="dropdown-item" href="#">Jack Rusell</a>
-                        <a class="dropdown-item" href="#">Boxer</a>
-                        <a class="dropdown-item" href="#">German Shepherd</a>
-                        <a class="dropdown-item" href="#">Beagle</a>
-                        <a class="dropdown-item" href="#">Shiba Inu</a>
-                        <a class="dropdown-item" href="#">Corgi</a>
-                        <a class="dropdown-item" href="#">Chihuahua</a>
-                        
-                    </div>
-                </div>
+                <img src="assets/images/fb-dog-350x350.jpg" class="img-fluid" alt="find a dog">
+                <select  class="form-control" id="dogdropdown">
+                        <option class="dropdown-item" value="pitbull">Pit Bull</option>
+                        <option class="dropdown-item" value="retriever">Retriever</option>
+                        <option class="dropdown-item" value="jackrussell">Jack Russell</option>
+                        <option class="dropdown-item" value="boxer">Boxer</option>
+                        <option class="dropdown-item" value="germanshepherd">German Shepherd</option>
+                        <option class="dropdown-item" value="beagle">Beagle</option>
+                        <option class="dropdown-item" value="shibainu">Shiba Inu</option>
+                        <option class="dropdown-item" value="corgi">Corgi</option>
+                        <option class="dropdown-item" value="chihuahua">Chihuahua</option>
+                      </select>
             </div>
             <div class="col-2"></div>
 
@@ -100,8 +84,8 @@
             <div class="col-md-2">
                 <form>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" type="text" placeholder="zip code">
-                        <button type="button" class="btn btn-info">SEARCH</button>
+                        <input class="form-control form-control-lg" type="text" placeholder="zip code" id="zip-input">
+                        <button type="button" class="btn btn-info" id="searchbutton">SEARCH</button>
                     </div>
                 </form>
             </div>
@@ -129,7 +113,7 @@
         <div class="row">
             <div class="col-5"></div>
             <div class="col-2">
-                <div class="footerlogo"><img src="../assets/images/fetchbook-footer.svg"></div>
+                <div class="footerlogo"><img src="assets/images/fetchbook-footer.svg"></div>
                 <h6>© 2018 Fetchbook</h6>
             </div>
 
@@ -139,13 +123,14 @@
     </div>
 
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/app1.js"></script>
 
 </body>
 
