@@ -42,7 +42,9 @@
 }
 
 .btn{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
     background-color: #f7f7f7;
 }
 
@@ -76,15 +78,17 @@ h6{
 
 #pet-name{
     color: #17a2b8;
-    margin-top: 22%;
+    margin-top: 12%;
+    margin-left: 60px;
+
 }
 
-#breed-type{
-    margin-top: 25%;
+.breed-type{
+    margin-top: 13%;
 }
 
-#pet-distance{
-    margin-top: 25%;
+.pet-distance{
+    margin-top: 13%;
 }
 
 .favorite-cat{
@@ -99,4 +103,6 @@ h6{
     flex-flow: row wrap;
   }
 
-
+.container {
+    max-width: 100%;
+}
