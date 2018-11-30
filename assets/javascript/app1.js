@@ -31,12 +31,12 @@ console.log("Hello");
 // $(".dropdown-menu").text("HELLO");
 var latest_value= "";
 var animal="";
-$("#dogdropdown").on('change', function() {
+$("#dogdropdown").on('click', function() {
     console.log($("#dogdropdown option:selected").val());
     latest_value = $("#dogdropdown option:selected").val();
     animal=$(this).attr("data-breed");
 });
-$("#catdropdown").on('change', function() {
+$("#catdropdown").on('click', function() {
     console.log($("#catdropdown option:selected").val());
     latest_value = $("#catdropdown option:selected").val();
     animal=$(this).attr("data-breed");
