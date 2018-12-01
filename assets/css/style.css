@@ -45,13 +45,11 @@
     margin-top: 30px;
     margin-left: 50px;
     margin-bottom: 30px;
-    background-color: #f7f7f7;
 }
 
 #headings{
     margin-top: 40px;
 }
-
 
 .footer-copyright{
     width: 100%;
@@ -76,11 +74,49 @@ h6{
     text-align: center;
 }
 
-#pet-name{
+#petsView1 {
     color: #17a2b8;
-    margin-top: 12%;
-    margin-left: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+#petsView1 > a > img {
+    height: 125px;
+    width: 125px;
+    border-radius:50%;
+    padding: 16px;
+    object-fit: cover;
+}
+
+
+#petsView1 > a > img:hover {
+    height: 130px;
+    width: 130px;
+    border-radius:50%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+#petsView1 > a {
+    color: #17a2b8;
+    font-size: 16pt;
+    font-family: Tahoma, Geneva, sans-serif;
+    border: #ccc;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 16px 16px 30px 16px;
+    padding: 54px 16px;
+    background-color: #fbfbfb;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#amazon {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-bottom: 800px */
+    overflow: hidden;
 }
 
 .breed-type{
