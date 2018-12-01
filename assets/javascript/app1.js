@@ -65,7 +65,7 @@ function bindButtons() {
         
     
         var zip = document.getElementById('zip-input').value; // this line gets the zip code from the form entry
-        var url = 'http://api.petfinder.com/pet.find';
+        var url = 'https://api.petfinder.com/pet.find';
         console.log("hi");
       
         
